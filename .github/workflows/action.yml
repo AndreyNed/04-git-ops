@@ -1,0 +1,11 @@
+name: Run CI
+on: [push]
+
+jobs:
+  check_tabs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check tabs
+        run: echo "Check tabs placeholder"
+
