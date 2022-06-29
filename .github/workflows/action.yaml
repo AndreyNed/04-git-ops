@@ -1,0 +1,14 @@
+name: Run CI
+on: [push]
+
+jobs:
+  Count-Tabs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Count Tabs started"
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Check tabs
+        run: echo "Check tabs placeholder"
+      - run: echo "This job's status is ${{ job.status }}."
+
